@@ -1,0 +1,152 @@
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="static/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="static/css/master.css" rel="stylesheet" />
+    <link href="static/css/mp180515.css" rel="stylesheet" />
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/master.js"></script>
+</head>
+<body>
+    <div class="tabbox j-tab m-layout indexColumn">
+        <div class="tabhd m-layout-hd">
+            <ul class="f-cb">
+                <li>订单信息</li>
+                <li>产品信息</li>
+                <li>品牌介绍</li>
+            </ul>
+        </div>
+        <div class="tabmn m-layout-mn">
+            <div class="tabitm m-layout-mnc tabitm-order">
+                <div class="m-summary">
+                    <div class="userline">
+                        <div class="picpart"></div>
+                        <div class="rpart">
+                            <p>姓名：吴良波</p>
+                            <p>信息真实有效</p>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <div>
+                            <p>医疗机构：思维口腔西安雁塔门诊</p>
+                            <p>制作单位：西安悦冠义齿研制开发有限公司</p>
+                        </div>
+                    </div>
+                  <div class="btnline">
+             
+                  <div class="tel">
+	    
+	                <a href="tel:18700078881">联系客服</a>
+                       </div>
+                      <div class="u-btn" onclick="a href='tel:18700078881'">服务咨询：18700078881</div>
+                    </div>
+                </div>
+                <div class="m-info">
+                    <div class="cnt">
+                        <div class="stitle">订单信息</div>
+                        <ul>
+                            <li class="f-cb">
+                                <div class="lbpart">订单编号：</div>
+                                <div class="rpart">ks202404191509</div>
+                            </li>
+                            <li class="f-cb">
+                                <div class="lbpart">加工日期：</div>
+                                    <div class="rpart">2024-04-15 17:09</div>
+                            </li>
+                            <li class="f-cb">
+                                <div class="lbpart">医师姓名：</div>
+                                <div class="rpart">王医生</div>
+                            </li>
+                            <li class="f-cb">
+                                <div class="lbpart">义齿产品：</div>
+                                <div class="rpart">威兰德全瓷</div>
+                            </li>
+                            <li class="f-cb">
+                                <div class="lbpart">义齿品牌：</div>
+                                <div class="rpart">
+                                    Weland威兰德-德国进口
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="tabitm m-layout-mnc tabitm-product">
+                    <div class="onebox">
+                        <table class="m-table">
+                            <thead>
+                                <tr>
+                                    <td>产品名称</td>
+                                    <td>牙位</td>
+                                    <td>牙色</td>
+                                        <td>保质期</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>威兰德全瓷</td>
+                                    <td>
+                                        <table class="m-tb-tooth">
+                                            <tr>
+                                                <th></th>
+                                                <th>左上4</th>
+                                            </tr>
+                                            <tr>
+                                                <th></th>
+                                                <th></th>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>威兰德全瓷</td>
+                                            <td>2029/04/19</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                            </div>
+            <div class="tabitm tabitm-comp">
+                <div class="m-cnt ">
+                    <p style="text-indent:2em;">威兰德自创办以来，一直潜心口腔固定修复的发展，引进国际先进技术，不断革新氧化锆义齿修复材料。2012年，基于患者对义齿修复需求多样化，推出“瓷倍健”全瓷/全锆义齿品牌，秉承加倍强健的产品理念，为患者提供安全无毒、健康舒适、坚固耐用、自然美观的全瓷/全锆义齿。旨在让每一位中国老百姓都能用上安全无忧、健康美丽的全瓷/全锆牙。</p><p style="text-indent:2em;">相比金属烤瓷牙而言，氧化锆全瓷牙不仅使用安全无毒的氧化锆材料做內冠，结合先进的饰瓷工艺，得到色泽非常接近自然牙的义齿，而全锆牙在解决患者功能修复领域，又是独占鳌头，良好的生物相容性，高精度的数字化制作，做到不饰瓷、不崩瓷，非常适合后冠使用。</p><p style="text-indent:2em;">爱旗下三大义齿材料品牌：瓷倍健，魅影，玉瓷；爱全瓷牙品牌：爱齐。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        var winH = $("body").outerHeight();//获取当前窗口宽度
+        $(".indexColumn").css("min-height", winH);
+        var hdH = $(".m-layout-hd").outerHeight();
+        var num = 15;
+        var maxH1 = winH - hdH;
+        $(".tabitm-order").css("max-height", maxH1);
+        var tableH = 42;
+        var maxH2 = winH - hdH;
+        $(".tabitm-product").css("max-height", maxH2);
+        var maxH3 = winH - hdH - num;
+        $(".tabitm-comp .m-cnt").css("max-height", maxH3);
+        if("False" == "False") {
+            $.ajax({
+                type: "GET",
+                url: "/api/DentalQRCodeOrder/" + 79603308,
+                dataType: "json",
+                success: function(data) {
+                    if(data) {
+                        location.reload()
+                    }
+                }
+            });
+        }
+    });
+</script>

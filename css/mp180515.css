@@ -1,0 +1,80 @@
+﻿
+
+/*1——布局*/
+         .m-layout{}
+           .m-layout .m-layout-hd{text-align:center;padding:15px 4%;}
+           .m-layout .m-layout-mn{padding:0 4%;overflow-y:auto;}
+/*2——元件*/
+       .u-btn{display:inline-block;line-height:20px;padding:5px 20px;color:#fff;background-color:#e70012;cursor:pointer;}
+         .u-btn:hover{background-color:#cc0011}
+/*3——牙位table*/
+       .m-tb-tooth{min-height:30px;width:120px;}
+        .m-tb-tooth tr{}
+        .m-tb-tooth th{line-height:14px;min-height:14px;height:14px;width:50%;min-width:50%;max-width:50%;font-weight:normal;padding:0 2px;}
+        .m-tb-tooth tr:first-child th{border-bottom:1px solid #2c5871;}
+        .m-tb-tooth th:first-child{border-right:1px solid #2c5871;text-align:right}
+/*4——tab选项卡*/
+       .tabbox{}
+         .tabbox .tabhd{}
+           .tabbox .tabhd ul{}
+           .tabbox .tabhd ul li{float:left;width:32%;line-height:20px;padding:5px 0px;border:1px solid #2c5871;color:#2c5871;text-align:center;font-size:16px;cursor:pointer;}
+             .tabbox .tabhd ul li:nth-child(2){margin:0 2%;}
+           .tabbox .tabhd ul li:hover{border-color:#e70012;color:#e70012;}
+           .tabbox .tabhd ul li.z-sel{border-color:#e70012;background-color:#e70012;color:#fff;}
+         .tabbox .tabmn .tabitm{display:none;}
+/*5——表格*/
+       .m-table{color:#2c5871;}
+         .m-table tr{}
+         .m-table td{border-bottom:1px solid #2c5871;line-height:20px;padding:10px 5px;}
+         .m-table thead{border-top:1px solid #2c5871;}
+         .m-table tbody{}
+           .m-table tbody td{}
+
+/*6——首页*/
+       body{background:url('../images/bg.png') no-repeat 34% 0;background-size:cover;}
+       .indexColumn{margin:0 auto;max-width:768px;}
+       /*1：订单信息*/
+         .indexColumn .tabitm-order{}
+         /*（1）患者信息*/
+           .indexColumn .tabitm-order{padding-bottom:15px;} 
+           .indexColumn .tabitm-order .m-summary{text-align:center;font-size:16px;padding:40px 0;}
+             /*姓名*/
+             .indexColumn .tabitm-order .m-summary .userline{display:inline-block;position:relative;line-height:1.5em;color:#2c5871;padding:5px 0 5px 80px;min-height:64px;}
+               .indexColumn .tabitm-order .m-summary .picpart{position:absolute;top:0;left:0;display:inline-block;height:60px;width:60px;padding:13px 13px;border:2px solid #2c5871;border-radius:50%;}
+                 .indexColumn .tabitm-order .m-summary .picpart::after {content: "";display: inline-block;height: 30px;width: 30px;background: url('../images/unit.png') no-repeat;background-size:30px;}                
+               .indexColumn .tabitm-order .m-summary .rpart{}  
+             /*企业*/           
+             .indexColumn .tabitm-order .m-summary .text{line-height:1.6em;color:#2c5871;padding:30px 0;}       
+               .indexColumn .tabitm-order .m-summary .text div{display:inline-block;width:90%;text-align:left;min-width:260px;} 
+             /*按钮行*/           
+             .indexColumn .tabitm-order .btnline{}
+         /*（2）订单信息*/
+           .indexColumn .tabitm-order .m-info{padding-bottom:15px;}
+           .indexColumn .tabitm-order .m-info .cnt{color:#2c5871;padding:15px 10px 15px;line-height:20px;background: url('../images/bg2.png') repeat;}
+            .indexColumn .tabitm-order .m-info .stitle{line-height:20px;border-bottom:1px solid #5c5c5c;text-align:center;margin-bottom:10px;padding-bottom:5px;}
+             .indexColumn .tabitm-order .m-info ul{padding:0 10px;} 
+               .indexColumn .tabitm-order .m-info ul li{line-height:20px;padding:5px 0;}
+               .indexColumn .tabitm-order .m-info .lbpart{float:left;width:70px;}
+               .indexColumn .tabitm-order .m-info .rpart{margin-left:80px;}
+       /*2：产品信息*/
+         .indexColumn .tabitm-product{}
+           .indexColumn .tabitm-product .onebox{padding-bottom:40px;}
+           .indexColumn .tabitm-product .twobox{padding-bottom:10px;}
+         /*表格*/
+           .indexColumn .tabitm-product .m-table{}
+           .indexColumn .tabitm-product .table-head{position:absolute;top:0;left:0;right:0;}
+           .indexColumn .tabitm-product .table-body{overflow-y:auto;padding-bottom:15px;}
+         /*产品表格*/
+           .indexColumn .tabitm-product .onebox table{}
+             .indexColumn .tabitm-product .onebox table td:nth-child(1){min-width:60px;}
+             .indexColumn .tabitm-product .onebox table td:nth-child(2){width:130px;}
+             .indexColumn .tabitm-product .onebox table td:nth-child(3){width:50px;word-break: break-all;}
+             .indexColumn .tabitm-product .onebox table td:nth-child(4){min-width:60px;word-break: break-all;}
+         /*材料表格*/
+           .indexColumn .tabitm-product .twobox table{}
+             .indexColumn .tabitm-product .twobox table td:nth-child(1){min-width:70px;}
+             .indexColumn .tabitm-product .twobox table td:nth-child(2){min-width:70px;}
+             .indexColumn .tabitm-product .twobox table td:nth-child(3){min-width:40px;word-break: break-all;}
+       /*3：品牌介绍*/
+         .indexColumn .tabitm-comp{padding-bottom:15px;}
+           .indexColumn .tabitm-comp .m-cnt{color:#2c5871;line-height:3em;text-indent:2em;overflow-y:auto;}
